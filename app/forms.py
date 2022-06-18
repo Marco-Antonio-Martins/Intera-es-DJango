@@ -18,3 +18,6 @@ class ContatoForm(forms.Form):
                 self.add_error('mensagem', 'Mensagem contém palavra não permitida')
         
         return dados
+
+class PublicacaoForm(forms.Form):
+    mensagem = forms.CharField(widget=forms.Textarea)

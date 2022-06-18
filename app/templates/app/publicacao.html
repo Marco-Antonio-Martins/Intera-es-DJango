@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-        .errorlist{
-            color:red;
-        }
-    </style>
 </head>
 <body>
     {% if user.is_authenticated %}
-        <h1>Contato</h1>
+        <h1>Publicação</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
